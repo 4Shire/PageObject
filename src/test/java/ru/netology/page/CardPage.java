@@ -15,7 +15,7 @@ public class CardPage {
         amount.shouldBe(visible);
     }
 
-    public DashboardPage card(DataHelper.CardsInfo cardsInfo) {
+    public DashboardPage validTransfer(DataHelper.CardsInfo cardsInfo) {
         amount.setValue(String.valueOf(cardsInfo.getSum()));
         amountFrom.setValue(cardsInfo.getNumCard());
         buttonFrom.click();
